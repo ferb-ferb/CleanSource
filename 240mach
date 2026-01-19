@@ -1,7 +1,8 @@
 #!/bin/bash
 #Write this file, run 'chmod +x 240mach', add it to your $PATH
 #Now when you want to ssh for 240 simply run '240mach'
+#Replace <andrewid> with your andrewid and <XX> with a number 0-31
 echo "Connecting to 18-240 machine with trusted X11 forwarding enabled..."
 echo "Setting ECE240 env var..." 
-ssh -Y -t athanf@ece011.ece.local.cmu.edu 'export ECE240=1; exec bash -l'
+ssh -Y -t <andrewid>@ece0<XX>.ece.local.cmu.edu 'export ECE240=1; exec bash -l'
 
