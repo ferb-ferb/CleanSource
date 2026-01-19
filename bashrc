@@ -1,0 +1,13 @@
+if [[ $- == *i* ]]; then
+    PS1='\[^[[01;32m\]\u@\h\[^[[00m\]:\[^[[01;34m\]\w\[^[[00m\]$ '
+    alias safecc="gcc -Wall -Wextra -Wshadow -Werror -std=c99 -pedantic -g -DDEBUG"
+    alias unsafecc="gcc -Wall -Wextra -Wshadow -Werror -std=c99 -pedantic"
+    alias badcc="gcc -w"
+    alias ls="ls --color=auto"
+    export PATH=$PATH:$HOME/bin
+    export EDITOR=vim
+    if [[ -n "ECE240" ]]; then
+        source ~/.course_18240
+    fi
+fi
+

@@ -1,0 +1,5 @@
+if [[ -r /afs/ece.cmu.edu/class/ece240 ]]; then
+  source /afs/ece.cmu.edu/class/ece240/bin/setup_240
+  source /afs/ece/class/ece240/bin/setup_vivado
+fi
+

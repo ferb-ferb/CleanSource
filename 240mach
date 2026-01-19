@@ -1,0 +1,6 @@
+#!/bin/bash
+
+echo "Connecting to 18-240 machine with trusted X11 forwarding enabled..."
+echo "Setting ECE240 env var..." 
+ssh -Y -t athanf@ece011.ece.local.cmu.edu 'export ECE240=1; exec bash -l'
+
