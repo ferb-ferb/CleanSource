@@ -6,7 +6,7 @@ if [[ $- == *i* ]]; then
   alias unsafecc="gcc -Wall -Wextra -Wshadow -Werror -std=c99 -pedantic"
   alias badcc="gcc -w"
   alias ls="ls --color=auto"
-  export PATH=$PATH:$HOME/bin
+  export PATH="$HOME/bin:$PATH"
   export EDITOR=vim
   case "$COURSE" in
   ECE240) source ~/.course_18240 ;;
